@@ -15,13 +15,22 @@ const tajawal = Tajawal({
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
+const siteUrl = new URL('https://tayyar.app')
 const shareImage = '/brand/tayyar-og.png'
+// Site identity - the "من أول اتصال إلى إغلاق الصفقة" tagline stays in the
+// page content (app/page.tsx hero) as marketing copy; it is intentionally
+// NOT the metadata title/OG identity.
+const title = 'تيار — نظام تشغيل للمكاتب العقارية السعودية'
+const description =
+  'نظام تشغيل للمنشآت العقارية يجمع الطلبات والعقارات والعملاء والمتابعات في مكان واحد.'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://tayyar.app'),
-  title: 'تيار | من أول اتصال إلى إغلاق الصفقة',
-  description:
-    'نظام تشغيل للمنشآت العقارية يجمع الطلبات والعقارات والعملاء والمتابعات في مكان واحد.',
+  metadataBase: siteUrl,
+  title,
+  description,
+  alternates: {
+    canonical: '/',
+  },
   icons: {
     icon: [
       { url: '/brand/tayyar-favicon-16.svg', sizes: '16x16', type: 'image/svg+xml' },
@@ -31,10 +40,9 @@ export const metadata: Metadata = {
     apple: [{ url: '/brand/tayyar-app-icon.png', sizes: '512x512', type: 'image/png' }],
   },
   openGraph: {
-    title: 'تيار | من أول اتصال إلى إغلاق الصفقة',
-    description:
-      'حوّل العمل العقاري اليومي إلى خطوات واضحة لا تضيع معها الفرص.',
-    url: 'https://tayyar.app',
+    title,
+    description,
+    url: siteUrl,
     siteName: 'تيار',
     locale: 'ar_SA',
     type: 'website',
@@ -49,6 +57,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
+    title,
+    description,
     images: [shareImage],
   },
 }

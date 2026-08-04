@@ -21,6 +21,13 @@ Approved TAYYAR v1 logo assets, copied over from `TayyarCore/Tayyar-V2`'s
 
 ## Master Brand System v1.0 (turquoise) — status
 
+**None of the assets below are final for the new turquoise identity.**
+`tayyar-og.png`, `tayyar-app-icon.png`, and every favicon/logo/symbol file
+are still the old approved navy artwork copied over from Tayyar-V2, pending
+a real export from the brand owner. They are not being mechanically
+recolored here, and the header's inline `TayyarMark` (see `app/page.tsx`)
+is an interim stand-in, not a final deliverable.
+
 This repo's palette (`app/globals.css`) now runs on the Master Brand System
 v1.0 turquoise/dark tokens. The header/footer's live logo mark
 (`TayyarMark` in `app/page.tsx`) reproduces the same approved dot-cluster

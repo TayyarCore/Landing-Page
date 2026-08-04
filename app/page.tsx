@@ -315,9 +315,12 @@ export default function Home() {
   )
 }
 
-// Same approved TAYYAR v1 dot-cluster geometry as public/brand/tayyar-symbol.svg,
-// reproduced inline (not <img>) so it can take the brand token color directly —
-// mirrors how the product app's TayyarLogo component renders the mark.
+// INTERIM implementation, not a final deliverable: reproduces the approved
+// TAYYAR v1 dot-cluster geometry (public/brand/tayyar-symbol.svg) inline so
+// it can take the turquoise brand token instead of the static file's baked-in
+// navy fill - the static SVGs can't be recolored per the "do not recolor"
+// rule (see public/brand/README.md). Replace this with the real exported
+// asset once the brand owner delivers a turquoise-colorway logo file.
 function TayyarMark() {
   return (
     <svg
