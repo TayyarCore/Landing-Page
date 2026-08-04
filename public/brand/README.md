@@ -2,8 +2,7 @@
 
 Copied over from `TayyarCore/Tayyar-V2`'s `public/brand/`.
 
-Logo, symbol, favicon, and app icons: final production assets.
-Open Graph image: pending final approved 1200×630 export.
+Logo, symbol, favicon, app icons, and Open Graph image: final production assets.
 
 ## Assets
 
@@ -18,10 +17,8 @@ Open Graph image: pending final approved 1200×630 export.
 - `favicon-16x16.png` / `favicon-32x32.png` — raster favicon fallbacks.
 - `apple-touch-icon-180.png` — iOS home screen icon, 180×180.
 - `tayyar-app-icon-512.png` / `tayyar-app-icon-192.png` — app icons (18% safe area).
-- `tayyar-og.png` — social share image, wired into `app/layout.tsx`
-  OpenGraph/Twitter metadata. **Still the interim navy asset** — a final
-  approved 1200×630 export from the brand-owner Canva design is pending and
-  will land in a separate follow-up commit.
+- `tayyar-og.png` — social share image, 1200×630, final approved export,
+  wired into `app/layout.tsx` OpenGraph/Twitter metadata.
 
 ## Colors
 
@@ -42,10 +39,3 @@ Open Graph image: pending final approved 1200×630 export.
 - Do not add text to app icons or favicons.
 - Keep enough clear space around the logo so the dot cluster remains recognizable.
 - Do not re-draw the symbol geometry inline in JSX — use these files directly.
-
-## Pending
-
-`tayyar-og.png` — final approved 1200×630 export from the brand-owner Canva
-design (`Tayyar — Channel Assets Final Review v1.0`, page 4) is pending. The
-current file is the old interim navy asset and will be replaced in a
-separate follow-up commit once the approved export is available.
