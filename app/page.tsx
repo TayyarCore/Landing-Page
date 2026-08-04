@@ -103,8 +103,13 @@ export default function Home() {
       <header className="site-header">
         <div className="container nav">
           <a className="brand" href="#top" aria-label="تيار">
-            <TayyarMark />
-            تيــار
+            <img
+              src="/brand/tayyar-logo-ar-dark-bg.svg"
+              alt="تيار"
+              width={147}
+              height={47}
+              className="brand-logo"
+            />
           </a>
           <nav className="nav-links" aria-label="التنقل الرئيسي">
             <a href="#product">المنتج</a>
@@ -307,40 +312,20 @@ export default function Home() {
 
       <footer>
         <div className="container footer-inner">
-          <b>تيــار · نظام تشغيل للمنشآت العقارية</b>
+          <div className="footer-brand">
+            <img
+              src="/brand/tayyar-logo-ar-dark-bg.svg"
+              alt="تيار"
+              width={147}
+              height={47}
+              className="footer-logo"
+            />
+            <span>نظام تشغيل للمنشآت العقارية</span>
+          </div>
           <span>© 2026 جميع الحقوق محفوظة</span>
         </div>
       </footer>
     </>
-  )
-}
-
-// INTERIM implementation, not a final deliverable: reproduces the approved
-// TAYYAR v1 dot-cluster geometry (public/brand/tayyar-symbol.svg) inline so
-// it can take the turquoise brand token instead of the static file's baked-in
-// navy fill - the static SVGs can't be recolored per the "do not recolor"
-// rule (see public/brand/README.md). Replace this with the real exported
-// asset once the brand owner delivers a turquoise-colorway logo file.
-function TayyarMark() {
-  return (
-    <svg
-      className="brand-mark"
-      viewBox="0 0 96 96"
-      role="img"
-      aria-label="Tayyar"
-      fill="var(--turquoise)"
-    >
-      <circle cx="18" cy="48" r="6" />
-      <circle cx="38" cy="24" r="7" />
-      <circle cx="59" cy="16" r="7" />
-      <circle cx="74" cy="28" r="7" />
-      <circle cx="40" cy="47" r="7" />
-      <circle cx="58" cy="43" r="7" />
-      <circle cx="77" cy="47" r="7" />
-      <circle cx="38" cy="70" r="7" />
-      <circle cx="58" cy="73" r="7" />
-      <circle cx="75" cy="67" r="7" />
-    </svg>
   )
 }
 

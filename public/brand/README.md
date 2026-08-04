@@ -1,52 +1,51 @@
-# TAYYAR Logo System
+# Tayyar Master Brand System v1.0 — Final Production Assets
 
-Approved TAYYAR v1 logo assets, copied over from `TayyarCore/Tayyar-V2`'s
-`public/brand/`. Do not redesign, replace, or reinterpret the symbol.
+Copied over from `TayyarCore/Tayyar-V2`'s `public/brand/`.
+
+Logo, symbol, favicon, and app icons: final production assets.
+Open Graph image: pending final approved 1200×630 export.
 
 ## Assets
 
-- `tayyar-logo-full-light.svg` / `tayyar-logo-full-dark.svg` — full logo for light/dark backgrounds.
-- `tayyar-logo-compact-light.svg` / `tayyar-logo-compact-dark.svg` — compact logo.
-- `tayyar-symbol.svg` / `tayyar-symbol-dark.svg` / `tayyar-symbol-light.svg` — standalone symbol (see note below).
-- `tayyar-app-icon.svg`, `tayyar-app-icon.png`, `tayyar-app-icon-dark.svg` — app/profile icon.
-- `tayyar-favicon-{16,32,48}.svg`, `tayyar-favicon-{16,32,48,180}.png`, `tayyar-favicon.svg` — favicon variants.
-- `tayyar-og.png` — social share image (1200×630), wired into `app/layout.tsx` OpenGraph/Twitter metadata.
+- `tayyar-symbol.svg` — standalone symbol, turquoise `#2DD4BF`. General use on dark and light backgrounds; compact/mobile spaces.
+- `tayyar-symbol-white.svg` — standalone symbol, white `#F8FAFC`, for dark backgrounds.
+- `tayyar-symbol-dark.svg` — standalone symbol, dark `#0B0F14`, for light backgrounds.
+- `tayyar-logo-ar-dark-bg.svg` — Arabic logo (turquoise symbol + white «تيــار») for dark backgrounds. Used in the site header and footer.
+- `tayyar-logo-ar-light-bg.svg` — Arabic logo (turquoise symbol + dark «تيــار») for light backgrounds.
+- `tayyar-logo-en-dark-bg.svg` — English "TAYYAR" logo for dark backgrounds.
+- `tayyar-logo-en-light-bg.svg` — English "TAYYAR" logo for light backgrounds.
+- `tayyar-favicon.svg` — vector favicon, 1:1, `#0B0F14` background.
+- `favicon-16x16.png` / `favicon-32x32.png` — raster favicon fallbacks.
+- `apple-touch-icon-180.png` — iOS home screen icon, 180×180.
+- `tayyar-app-icon-512.png` / `tayyar-app-icon-192.png` — app icons (18% safe area).
+- `tayyar-og.png` — social share image, wired into `app/layout.tsx`
+  OpenGraph/Twitter metadata. **Still the interim navy asset** — a final
+  approved 1200×630 export from the brand-owner Canva design is pending and
+  will land in a separate follow-up commit.
+
+## Colors
+
+- Turquoise: `#2DD4BF`
+- Dark: `#0B0F14`
+- White: `#F8FAFC`
+
+## Usage
+
+- Dark backgrounds (header, footer): `tayyar-logo-ar-dark-bg.svg`.
+- Light backgrounds: `tayyar-logo-ar-light-bg.svg`.
+- Narrow spaces and mobile: `tayyar-symbol.svg`.
+- Favicon: `tayyar-favicon.svg`, with `favicon-16x16.png` / `favicon-32x32.png` as raster fallbacks.
 
 ## Rules
 
-- Do not alter the dotted symbol.
+- Do not redesign, recolor, or reinterpret the symbol geometry.
 - Do not add text to app icons or favicons.
-- Do not recolor outside the provided light/dark variants.
 - Keep enough clear space around the logo so the dot cluster remains recognizable.
+- Do not re-draw the symbol geometry inline in JSX — use these files directly.
 
-## Master Brand System v1.0 (turquoise) — status
+## Pending
 
-**None of the assets below are final for the new turquoise identity.**
-`tayyar-og.png`, `tayyar-app-icon.png`, and every favicon/logo/symbol file
-are still the old approved navy artwork copied over from Tayyar-V2, pending
-a real export from the brand owner. They are not being mechanically
-recolored here, and the header's inline `TayyarMark` (see `app/page.tsx`)
-is an interim stand-in, not a final deliverable.
-
-This repo's palette (`app/globals.css`) now runs on the Master Brand System
-v1.0 turquoise/dark tokens. The header/footer's live logo mark
-(`TayyarMark` in `app/page.tsx`) reproduces the same approved dot-cluster
-geometry as `tayyar-symbol.svg` but inline, filled with `var(--turquoise)`,
-so it renders correctly against this site's dark header — mirroring how
-`Tayyar-V2`'s `TayyarLogo` component works. The static files above are
-**unchanged and still navy** (`#2a3b62`), per the "do not recolor" rule;
-`tayyar-og.png` and `tayyar-app-icon.png` are therefore still the old navy
-identity in favicon/share-link previews, pending a real redesign delivery.
-
-Note: `tayyar-symbol-dark.svg` is named "for dark backgrounds" but its fill
-is identical navy to the base `tayyar-symbol.svg` — it doesn't actually
-lighten for dark contexts. This looks like an authoring gap from the
-original v1 delivery, not something introduced here; flagging for the
-brand owner rather than silently "fixing" an approved asset.
-
-Four files were added purely to satisfy the requested asset-structure
-naming convention and are **not wired into any code**:
-`tayyar-symbol-light.svg` (alias of `tayyar-symbol.svg`), `tayyar-favicon.svg`
-(alias of `tayyar-favicon-32.svg`), and `tayyar-logo-ar.svg` /
-`tayyar-logo-en.svg` (placeholders — no approved Arabic-only/English-only
-split exists; `tayyar-logo-full-*` already combines both scripts).
+`tayyar-og.png` — final approved 1200×630 export from the brand-owner Canva
+design (`Tayyar — Channel Assets Final Review v1.0`, page 4) is pending. The
+current file is the old interim navy asset and will be replaced in a
+separate follow-up commit once the approved export is available.

@@ -20,9 +20,9 @@ const shareImage = '/brand/tayyar-og.png'
 // Site identity - the "من أول اتصال إلى إغلاق الصفقة" tagline stays in the
 // page content (app/page.tsx hero) as marketing copy; it is intentionally
 // NOT the metadata title/OG identity.
-const title = 'تيار — نظام تشغيل للمكاتب العقارية السعودية'
+const title = 'تيار — نظام تشغيل للمنشآت العقارية السعودية'
 const description =
-  'نظام تشغيل للمنشآت العقارية يجمع الطلبات والعقارات والعملاء والمتابعات في مكان واحد.'
+  'نظام تشغيل للمنشآت والوسطاء العقاريين في السعودية، يجمع الطلبات والعقارات والعملاء والمتابعات في مسار عمل واضح.'
 
 export const metadata: Metadata = {
   metadataBase: siteUrl,
@@ -33,11 +33,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/brand/tayyar-favicon-16.svg', sizes: '16x16', type: 'image/svg+xml' },
-      { url: '/brand/tayyar-favicon-32.svg', sizes: '32x32', type: 'image/svg+xml' },
-      { url: '/brand/tayyar-favicon-48.svg', sizes: '48x48', type: 'image/svg+xml' },
+      { url: '/brand/tayyar-favicon.svg', type: 'image/svg+xml' },
+      { url: '/brand/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/brand/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
     ],
-    apple: [{ url: '/brand/tayyar-app-icon.png', sizes: '512x512', type: 'image/png' }],
+    apple: [{ url: '/brand/apple-touch-icon-180.png', sizes: '180x180', type: 'image/png' }],
   },
   openGraph: {
     title,
