@@ -103,8 +103,13 @@ export default function Home() {
       <header className="site-header">
         <div className="container nav">
           <a className="brand" href="#top" aria-label="تيار">
-            <span className="brand-mark" aria-hidden="true" />
-            تيــار
+            <img
+              src="/brand/tayyar-logo-ar-dark-bg.svg"
+              alt="تيار"
+              width={147}
+              height={47}
+              className="brand-logo"
+            />
           </a>
           <nav className="nav-links" aria-label="التنقل الرئيسي">
             <a href="#product">المنتج</a>
@@ -307,7 +312,16 @@ export default function Home() {
 
       <footer>
         <div className="container footer-inner">
-          <b>تيــار · نظام تشغيل للمنشآت العقارية</b>
+          <div className="footer-brand">
+            <img
+              src="/brand/tayyar-logo-ar-dark-bg.svg"
+              alt="تيار"
+              width={147}
+              height={47}
+              className="footer-logo"
+            />
+            <span>نظام تشغيل للمنشآت العقارية</span>
+          </div>
           <span>© 2026 جميع الحقوق محفوظة</span>
         </div>
       </footer>
