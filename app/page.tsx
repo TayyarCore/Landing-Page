@@ -103,7 +103,7 @@ export default function Home() {
       <header className="site-header">
         <div className="container nav">
           <a className="brand" href="#top" aria-label="تيار">
-            <span className="brand-mark" aria-hidden="true" />
+            <TayyarMark />
             تيــار
           </a>
           <nav className="nav-links" aria-label="التنقل الرئيسي">
@@ -312,6 +312,32 @@ export default function Home() {
         </div>
       </footer>
     </>
+  )
+}
+
+// Same approved TAYYAR v1 dot-cluster geometry as public/brand/tayyar-symbol.svg,
+// reproduced inline (not <img>) so it can take the brand token color directly —
+// mirrors how the product app's TayyarLogo component renders the mark.
+function TayyarMark() {
+  return (
+    <svg
+      className="brand-mark"
+      viewBox="0 0 96 96"
+      role="img"
+      aria-label="Tayyar"
+      fill="var(--turquoise)"
+    >
+      <circle cx="18" cy="48" r="6" />
+      <circle cx="38" cy="24" r="7" />
+      <circle cx="59" cy="16" r="7" />
+      <circle cx="74" cy="28" r="7" />
+      <circle cx="40" cy="47" r="7" />
+      <circle cx="58" cy="43" r="7" />
+      <circle cx="77" cy="47" r="7" />
+      <circle cx="38" cy="70" r="7" />
+      <circle cx="58" cy="73" r="7" />
+      <circle cx="75" cy="67" r="7" />
+    </svg>
   )
 }
 
