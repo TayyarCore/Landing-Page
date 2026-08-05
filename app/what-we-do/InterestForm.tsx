@@ -100,7 +100,7 @@ export default function InterestForm() {
         <textarea name="notes" rows={4} maxLength={1200} />
       </label>
 
-      <label className={styles.honeypot} aria-hidden="true">
+      <label hidden aria-hidden="true">
         <span>الموقع الإلكتروني</span>
         <input name="website" tabIndex={-1} autoComplete="off" />
       </label>
