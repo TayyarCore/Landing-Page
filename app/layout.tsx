@@ -24,12 +24,55 @@ const title = 'تيار — نظام تشغيل للمنشآت العقارية 
 const description =
   'نظام تشغيل للمنشآت والوسطاء العقاريين في السعودية، يجمع الطلبات والعقارات والعملاء والمتابعات في مسار عمل واضح.'
 
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': 'https://tayyar.app/#website',
+      url: 'https://tayyar.app',
+      name: 'تيار',
+      description,
+      inLanguage: 'ar-SA',
+    },
+    {
+      '@type': 'SoftwareApplication',
+      '@id': 'https://tayyar.app/#software',
+      name: 'تيار',
+      url: 'https://tayyar.app',
+      image: 'https://tayyar.app/brand/tayyar-og.png',
+      description,
+      applicationCategory: 'BusinessApplication',
+      operatingSystem: 'Web',
+      inLanguage: 'ar-SA',
+      audience: {
+        '@type': 'BusinessAudience',
+        audienceType: 'المنشآت والوسطاء العقاريون في السعودية',
+      },
+    },
+  ],
+}
+
 export const metadata: Metadata = {
   metadataBase: siteUrl,
+  applicationName: 'تيار',
   title,
   description,
+  category: 'business',
+  referrer: 'origin-when-cross-origin',
   alternates: {
     canonical: '/',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   icons: {
     icon: [
@@ -51,7 +94,7 @@ export const metadata: Metadata = {
         url: shareImage,
         width: 1200,
         height: 630,
-        alt: 'تيار',
+        alt: 'تيار — نظام تشغيل للمنشآت العقارية السعودية',
       },
     ],
   },
@@ -67,6 +110,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="ar" dir="rtl" className={`${tajawal.variable} ${inter.variable}`}>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
         {children}
         <LeadCaptureEnhancer />
       </body>
