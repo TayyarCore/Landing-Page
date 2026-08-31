@@ -137,7 +137,7 @@ export default function Home() {
               </p>
               <div className="hero-actions">
                 <a className="button button-primary" href="#founders">
-                  اطلب الانضمام للبرنامج المؤسس ←
+                  اطلب عرضًا على سيناريو منشأتك ←
                 </a>
                 <a className="button button-secondary" href="#workflow">
                   شاهد كيف يعمل تيار ↓
@@ -257,12 +257,14 @@ export default function Home() {
               <span className="pill pill-dark">البرنامج المؤسس · أول 10 منشآت</span>
               <h2>انضم إلى المنشآت المؤسسة لتيار</h2>
               <p>
-                نعمل مع أول 10 منشآت بصورة مباشرة، ونطور تيار بناءً على الاستخدام العقاري الحقيقي.
+                نعمل مع عدد محدود من المنشآت بصورة مباشرة، ونطور تيار بناءً على الاستخدام العقاري الحقيقي.
               </p>
               <div className="price">
-                499 <small>ر.س شهريًا</small>
+                <small>قبول محدود في هذه المرحلة</small>
               </div>
-              <p className="price-note">لأول 6 أشهر · ثم 999 ر.س شهريًا</p>
+              <p className="price-note">
+                نبدأ من سيناريو حقيقي داخل منشأتك، ثم نحدد نطاق التعاون المناسب.
+              </p>
               <div className="benefits">
                 {[
                   'استخدام كامل للمنصة',
@@ -279,9 +281,9 @@ export default function Home() {
 
             <div className="form-card">
               <p className="eyebrow">اطلب عرضًا مباشرًا</p>
-              <h2>شاهد تيار على سيناريو من عمل منشأتك</h2>
+              <h2>شاهد تيار على سيناريو حقيقي من منشأتك</h2>
               <p className="section-description">
-                اترك بياناتك لجدولة عرض مباشر يوضح مسار الطلب والعقار والمتابعة.
+                اترك بياناتك لجدولة عرض مباشر يوضح مسار الطلب والعقار والمتابعة داخل تيار.
               </p>
               <div className="fields-grid">
                 <input aria-label="الاسم الكامل" placeholder="الاسم الكامل" />
@@ -290,9 +292,9 @@ export default function Home() {
                 <input aria-label="رقم الجوال" dir="ltr" placeholder="رقم الجوال" />
               </div>
               <button className="button button-primary full-width" type="button">
-                أرسل طلب الانضمام
+                اطلب عرضًا على منشأتك
               </button>
-              <p className="form-note">سيتم ربط النموذج بعد تثبيت مشروع الصفحة المستقل.</p>
+              <p className="form-note">سنتواصل معك لتنسيق موعد العرض المباشر.</p>
             </div>
           </div>
         </section>
