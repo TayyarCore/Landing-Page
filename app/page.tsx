@@ -324,6 +324,11 @@ export default function Home() {
             />
             <span>نظام تشغيل للمنشآت العقارية</span>
           </div>
+          <nav className="footer-legal" aria-label="روابط قانونية">
+            <a href="/privacy">سياسة الخصوصية</a>
+            <a href="/terms">شروط الخدمة</a>
+            <a href="/data-deletion">حذف البيانات</a>
+          </nav>
           <span>© 2026 جميع الحقوق محفوظة</span>
         </div>
       </footer>
